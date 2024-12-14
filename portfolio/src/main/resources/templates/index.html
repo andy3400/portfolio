@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="/public/style/index.css">
+    <link rel="stylesheet" href="/public/style/chatbot.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+<header class="header">
+    <a href="#home" class="logo">Taeho Lee</a>
+    <button class="menu-toggle" aria-label="Toggle Menu">☰</button>
+    <nav class="navbar">
+        <a href="#home" class="active">Home</a>
+        <a href="/public/pdf/CV.pdf" target="_blank">Resume</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section class="home" id="home">
+    <div class="home-content">
+        <h3>Hello, It's me 👋</h3>
+        <h1>Taeho Lee</h1>
+        <h3>Your go-to <span class="text"></span></h3>
+        <p>
+            I'm a Software and AI Engineer passionate about blockchain and backend development.
+            <br> With expertise in Spring Boot, Solidity, and community management, I aim to create impactful solutions.
+            <br> Let's build something meaningful together.
+        </p>
+
+        <div class="home-Sci">
+            <a href="https://www.linkedin.com/in/%ED%83%9C%ED%98%B8-%EC%9D%B4-2a1a20190/" target="_blank" rel="noopener noreferrer" style="--i:9">
+                <i class='bx bxl-linkedin-square'></i>
+            </a>
+            <a href="https://github.com/andy3400" target="_blank" rel="noopener noreferrer" style="--i:10">
+                <i class='bx bxl-github'></i>
+            </a>
+        </div>
+        <a href="#what" class="btn-box">More About Me</a>
+    </div>
+    <div class="chatbot">
+        <div class="chat-header">AI Ambassador</div>
+        <div class="chat-body" id="chatBody"></div>
+        <div class="chat-input">
+            <input type="text" id="chatInput" placeholder="Type your message...">
+            <button id="sendBtn">Send</button>
+        </div>
+    </div>
+</section>
+
+<section class="services" id="services">
+    <div class="container" id="what">
+        <h1 class="sub-title">What I <span>do</span>? 💪</h1>
+        <div class="services-list">
+            <div>
+                <i class='bx bx-code' style='color:#00eeff'></i>
+                <h2>Development</h2>
+                <p>💻 I specialize in backend systems using Spring Boot, Solidity for blockchain, and REST API development.</p>
+            </div>
+            <div>
+                <i class='bx bx-bar-chart-alt-2' style='color:#00eeff'></i>
+                <h2>Blockchain</h2>
+                <p>🌐 I create secure and scalable blockchain solutions, focusing on decentralized finance (DeFi) and DAO research.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="about" id="about">
+    <div class="project-image-wrapper">
+        <img class="illustr-image" src="/public/pictures/who.webp" alt="Who Am I Image">
+    </div>
+    <div class="about-text">
+        <h2>Who Am I? 🫣</h2>
+        <h4>Adaptable <span>Engineer</span> with a Passion for <span>Innovation</span></h4>
+        <p>
+            Hi! I'm Taeho Lee, a software engineer with a strong focus on blockchain and AI. <br>
+            💡 I lead backend projects and community-building initiatives in tech ecosystems. <br>
+            🛠️ I work with Spring Boot, Solidity, and Docker to deliver robust systems and foster collaboration.
+        </p>
+        <a href="/public/pdf/CV.pdf" target="_blank" rel="noopener noreferrer" class="btn-box">Check My Resume</a>
+    </div>
+</section>
+
+<section class="about" id="whywork">
+    <div class="about-text">
+        <h2>Why work with me? 🤔</h2>
+        <h4>🎛️ Technical expertise with broad skills</h4>
+        <p>
+            I bring a mix of backend development, blockchain knowledge, and AI expertise to tackle complex challenges and drive innovation.
+        </p>
+        <h4>⚡ A Quick Learner</h4>
+        <p>
+            I continuously adapt to emerging technologies, ensuring I remain ahead in the fast-paced tech landscape.
+        </p>
+        <h4>💡 Soft skills matter</h4>
+        <p>
+            Collaboration and communication are my strengths, enabling me to deliver impactful results in team-oriented environments.
+        </p>
+    </div>
+    <div class="project-image-wrapper">
+        <img src="/public/pictures/why.webp" class="illustr-image" alt="Why Image">
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="footer-content">
+        <div class="footer-section">
+            <h3>Let's Connect</h3>
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/%ED%83%9C%ED%98%B8-%EC%9D%B4-2a1a20190/" class="social-icon" target="_blank">
+                    <i class='bx bxl-linkedin-square' style='color:#0A66C2'></i>
+                </a>
+                <a href="https://github.com/andy3400" class="social-icon" target="_blank">
+                    <i class='bx bxl-github' style='color:#fff'></i>
+                </a>
+            </div>
+        </div>
+
+        <div class="footer-section">
+            <h3>Quick Links</h3>
+            <ul class="footer-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Projects</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-section">
+            <h3 id="contact">Contact Info</h3>
+            <p><i class='bx bxs-envelope'></i>your_email@example.com</p>
+            <p><i class='bx bxs-phone'></i>+82 10 1234 5678</p>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <p>© 2024 Taeho Lee | All Rights Reserved</p>
+    </div>
+</footer>
+
+<script src="/public/js/main.js"></script>
+<script src="/public/js/chatbot.js"></script>
+</body>
+
+</html>
